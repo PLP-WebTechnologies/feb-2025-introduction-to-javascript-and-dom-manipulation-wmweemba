@@ -1,0 +1,47 @@
+/* Center the navigation bar */
+header nav {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the navigation bar horizontally */
+    align-items: center; /* Align items vertically */
+    padding: 10px; /* Add some padding for spacing */
+}
+
+/* Reset link styles */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align links horizontally */
+    gap: 15px; /* Add spacing between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Set default link color */
+    font-weight: bold; /* Make text bold */
+    padding: 10px 15px; /* Add padding for better click area */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #007BFF; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Default button styles */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* New class added when the event listener trigger of click is done. it moves the button below the other button */
+.moved-button {
+    display: block; /* Ensure the button is treated as a block element */
+    margin-top: 20px; /* Add spacing to move it below the other button */
+    position: relative; /* Keep it relative to its container */
+    transition: all 0.3s ease; /* Smooth transition for the movement */
+}
